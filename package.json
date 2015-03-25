@@ -1,0 +1,29 @@
+{
+  "name": "test_react_bootstrap",
+  "version": "0.0.0",
+  "description": "",
+  "main": "/app/application.js.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "webpack": "~1.7.3",
+    "coffee-script": "~1.9.1",
+    "coffee-loader": "~0.7.2",
+    "hamlc-loader": "0.0.11"
+  },
+  "dependencies": {
+    "es6-shim": "~0.27.1",
+    "react": "~0.13.1",
+    "react-bootstrap": "~0.18.0",
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3",
+    "underscore": "~1.8.2",
+    "reflux": "~0.2.7",
+    "immutable": "~3.6.4",
+    "immstruct": "~1.4.0",
+    "react-router": "~0.13.2"
+  }
+}
