@@ -4,7 +4,7 @@ define [
 ], (_shim, React) ->
 
   {div, a} = React.DOM
-  console.log 'woot hey'
+  console.log 'woot hey!!!!!'
 
   Tooltip = React.createFactory(require 'react-bootstrap/lib/Tooltip')
   OverlayTrigger = React.createFactory(require 'react-bootstrap/lib/OverlayTrigger')
@@ -12,9 +12,11 @@ define [
   Page = React.createFactory(
     React.createClass
       render: ->
-        tooltip = Tooltip className: 'hint-container', placement: 'right', @props.tooltip
+        console.log 'props: ', @props
+        tooltip = div style: height: 50,
+          Tooltip placement: 'right', "This is a tooltip!"
 
-        OverlayTrigger overlay: tooltip, delayShow: 300, deplayHide: 150,
-          div className: 'hint-icon-container',
-            a className: 'gg-icon-tooltip hint-icon', href: '#', 'hover here to trigger'
+        OverlayTrigger placement: 'right', overlay: tooltip, delayShow: 300, deplayHide: 150, placement: 'right',
+          div {},
+            a href: '#', 'hover here to trigger'
   )
