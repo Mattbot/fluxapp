@@ -3,7 +3,10 @@ Flux App
 install the dev server:
 npm install webpack-dev-server -g
 
-to build and run:
+to build:
+webpack --watch
+
+to run:
 webpack-dev-server --progress --colors
 
 open in browser:
